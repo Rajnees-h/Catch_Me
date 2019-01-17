@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background2"
+    tools:context="com.example.rajneesh.catch_me.MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/text_view_gameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textSize="35dp"
+        android:padding="10px"/>
+
+    <TextView
+        android:id="@+id/text_view_miss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miss : 00"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/text_view_gameName"/>
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : 00"
+        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="cursive"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/text_view_gameName"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_view_score"
+        android:layout_above="@+id/start_button"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+
+            android:id="@+id/allImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:weightSum="3"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image00"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/green"
+                    android:layout_margin="0px"
+                    android:paddingVertical="5px"
+                    android:visibility="invisible"
+                    android:paddingHorizontal="25px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/image01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/green"
+                    android:layout_margin="0px"
+                    android:paddingVertical="5px"
+                    android:visibility="invisible"
+                    android:paddingHorizontal="25px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/image02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/green"
+                    android:visibility="invisible"
+                    android:layout_margin="0px"
+                    android:paddingVertical="5px"
+                    android:paddingHorizontal="25px"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0px"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:paddingHorizontal="25px"
+                    android:paddingVertical="5px"
+                    android:src="@drawable/green" />
+
+                <ImageView
+                    android:id="@+id/image11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/green"
+                    android:layout_margin="0px"
+                    android:visibility="invisible"
+                    android:paddingVertical="5px"
+                    android:paddingHorizontal="25px"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/image12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0px"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="25px"
+                    android:paddingVertical="5px"
+                    android:src="@drawable/green"
+                    android:visibility="invisible" />
+
+            </LinearLayout><LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/green"
+                android:layout_margin="0px"
+                android:paddingVertical="5px"
+                android:visibility="invisible"
+                android:paddingHorizontal="25px"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/image21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/green"
+                android:layout_margin="0px"
+                android:paddingVertical="5px"
+                android:visibility="invisible"
+                android:paddingHorizontal="25px"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/image22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/green"
+                android:layout_margin="0px"
+                android:paddingVertical="5px"
+                android:visibility="invisible"
+                android:paddingHorizontal="25px"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/gameOver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game Over"
+            android:layout_centerInParent="true"
+            android:textSize="50sp"
+            android:visibility="invisible"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:fontFamily="cursive"/>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:textSize="30dp"
+        android:fontFamily="cursive"
+        android:onClick="start_game"
+        android:text="Start"/>
+
+
+
+</RelativeLayout>

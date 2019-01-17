@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context="com.example.rajneesh.catch_me.FirstActivity">
+
+    <TextView
+        android:id="@+id/text_view_gameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50dp"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:layout_marginTop="40px"
+        style="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_gameName"
+        android:layout_marginTop="30px"
+        android:text="Highscore : 0"
+        android:layout_centerInParent="true"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        />
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_highscore"
+        android:text="Score : 0"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:layout_marginTop="60px"
+        android:textSize="30sp"
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:onClick="newGame"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"/>
+
+
+</RelativeLayout>
